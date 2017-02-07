@@ -1,6 +1,6 @@
 {
   "name": "iamthestate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Returns all those things that've been added to the window object since initialization.",
   "main": "index.js",
   "scripts": {

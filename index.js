@@ -1,4 +1,5 @@
 (function () {
+    "use strict";
     const iframe = document.createElement('iframe');
     iframe.style.display = 'none';
     document.body.appendChild(iframe);
