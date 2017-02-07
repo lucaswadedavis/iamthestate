@@ -15,5 +15,21 @@
       return difference;
     };
 
-    window.iAmTheState = iAmTheState;
+    // Module Compatibility Code
+
+    if (typeof define === 'function' && define.amd) {
+      define('iamthestate', [], function() {
+        return iAmTheState;
+      });
+    }
+
+    const root = this;
+    if (typeof exports !== 'undefined') {
+      if (typeof module !== 'undefined' && module.exports) {
+        exports = module.exports = iAmTheState;
+      }
+      exports.iAmTheState = iAmTheState;
+    } else {
+      root.iAmTheState = iAmTheState;
+    }
 }());
